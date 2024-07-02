@@ -14,7 +14,7 @@ import org.example.util.HibernateUtil;
 import java.util.List;
 
 
-@Path("/reader")
+@Path("/api/v1/reader")
 public class ReaderController extends BaseController<Reader>{
     private final ReaderDAO readerDAO;
     public ReaderController(){
