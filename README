@@ -1,0 +1,7 @@
+App consists of controllers and DAOs. There is a simple hierarchy for CRUD methods in father classes(BaseDAO,BaseController).
+
+The same hierarchy stands for entities.
+
+The main functionality is in borrowing and returning books (/api/v1/book/ borrow or return). All borrowing/return
+operations are stored in a table and can be accessed by date bounds in /api/v1/book/report.
+
