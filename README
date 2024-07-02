@@ -1,6 +1,12 @@
 App consists of controllers and DAOs. There is a simple hierarchy for CRUD methods in father classes(BaseDAO,BaseController).
 
-The same hierarchy stands for entities.
+DAOs work with hibernate sessions, execute SQL queries needed for methods.
+
+Controller objects proceed http requests and handle data to DAOs.
+
+The same hierarchy stands for DB entities.
+
+the App class specifies were the controllers are located so they can be created
 
 The main functionality is in borrowing and returning books (/api/v1/book/ borrow or return). All borrowing/return
 operations are stored in a table and can be accessed by date bounds in /api/v1/book/report.
